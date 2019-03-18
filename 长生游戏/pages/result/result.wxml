@@ -1,0 +1,72 @@
+<view class="top">
+  <view class='title'>
+    <icon class="iconfont icon-jiantou" bindtap='navergator'></icon>
+  </view>
+</view>
+<view class='topBox'></view>
+<view class='body'>
+<block wx:if="{{pay==0}}">
+  <view class='boxorder'>
+    <view class='shopname'>{{language.shop}}</view>
+    <view class='orderinformation' wx:for='{{order}}' wx:key="index">
+      加州牛肉面
+      <view class='share'>X 1</view>
+      <view class='price'>￥ 24</view>
+    </view>
+    <view class='orderinformation'>
+      加州牛肉面
+      <view class='share'>X 1</view>
+      <view class='price'>￥ 24</view>
+    </view>
+    <view class='count'>总金额
+      <view class='num'>￥48</view>
+    </view>
+    <view class='paycount'>实付额
+      <view class='num'>￥48</view>
+    </view>
+  </view>
+  </block>
+  <block wx:else>
+  <box/>
+  </block>
+   <view class='boxorder'>
+    <view class='orderId'>
+    <view class='image'><image src='{{foods}}'></image></view>
+    <view class='content'>
+    <view class='orderNumber'>取餐号 <view class='span'>{{success}}</view></view>
+    <view class='p'>商家叫号后评取餐号取餐</view>
+    </view>
+    </view>
+
+    <view class='shopname'>{{language.shop}}</view>
+    <view class='orderinformation' wx:for='{{order}}' wx:key="index">
+    <view class='span'>
+     {{order[index].productName}}
+    </view>
+      <view class='share'>X{{order[index].count}}</view>
+      <view class='price'>￥ {{order[index].productPrice}}</view>
+    </view>
+    <view class='count'> <view>总金额</view> 
+      <view class='num'>￥{{pricetotal}}</view>
+    </view>
+    <view class='paycount'> <view>实付金额</view> 
+      <view class='num'>￥{{pricetotal}}</view>
+    </view>
+  </view>
+  
+
+  <view class='consumption'>
+    <!-- <view class='table'>桌位号
+      <view class="num">25</view>
+    </view> -->
+    <view class='payway'>{{language.paymentmethod}}
+      <view class="num">{{language.weChatPayment}}</view>
+    </view>
+    <view class='time'>{{language.orderTime}}
+      <view class="num">2019-7-11</view>
+    </view>
+    <view class='ordernumber'>{{language.orderNumber}}
+      <view class="num">{{success}}</view>
+    </view>
+  </view>
+</view>

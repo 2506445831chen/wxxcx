@@ -1,0 +1,8 @@
+<button  open-type='getUserInfo' bindgetuserinfo='onGotUserInfo'>获取头像信息</button>
+
+<view class='image' style="height:230rpx;width:200rpx">
+<view bindtap='language' data-index='3'>English</view>
+<view bindtap='language' data-index='1'>中文简体</view>
+<view bindtap='language'  data-index='2'>русский язык</view>
+</view>
+<button bindtap='sweepCode' style=''>扫描二维码</button>

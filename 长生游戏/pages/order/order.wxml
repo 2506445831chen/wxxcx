@@ -1,0 +1,49 @@
+<view class="top">
+  <view class='title'>
+    <icon class="iconfont icon-jiantou" bindtap='back'></icon>{{language.confirmationoforder}}</view>
+</view>
+
+<view class="center">
+  <view class="name">{{language.shop}}</view>
+  <!-- <view class='mode'>
+   {{language.diningmode}}
+   <view class='mode-point'>
+      <view class='checkbox' bindtap='checkboxChange' data-id='1'>
+      <view class="checkbox-small {{type==1?'active':''}}"></view>
+      </view> {{language.tangfood}}
+      <view class='checkbox' bindtap='checkboxChange' data-id='2'><view class="checkbox-small {{type==2?'active':''}}"></view>
+      </view>{{language.takeoutfood}}
+   </view>
+  </view> -->
+  <view class='details'>
+    <view class="details-name">{{language.detailsofdishes}}</view>
+    <view class='box' wx:for="{{goods1}}" wx:key='index'>
+      <view class='image'><image src="http://4j1ade7.hn3.mofasuidao.cn/image/{{goods1[index].productIcon}}"></image></view>
+      <view class='words'>
+        <view class='span'>{{goods1[index].productName}}</view>
+        <view class="num">x <view class="count">{{goods1[index].count}}</view></view>
+      </view>
+      <view class='price'>{{language.company}}
+        <view class='price-num'>{{goods1[index].productPrice}}</view>
+      </view>
+    </view>
+  </view>
+
+  <navigator class='remarks' url="/pages/remarks/remarks">
+  <view class='remarks-left'>{{language.remarks}}</view>
+  <view class='remarks-right' wx:if="{{content}}">{{content}}<icon class='iconfont icon-jiantou1'></icon>
+   </view>
+   <view class='remarks-right' wx:else>请输入口味、偏好等要求<icon class='iconfont icon-jiantou1'></icon>
+   </view>
+</navigator>
+
+</view>
+ <view class="bottom">
+ <view class='bottomleft'>
+<view class='bottom-span'>{{language.total}}：</view>
+<view class="bottom-money">{{language.company}}</view> 
+<view class='bottom-num'> {{pricetotal}}</view>
+ <view class='bottom-notes'></view>
+ </view>
+ <view class="button" bindtap='sureOrder'>{{language.confirmtheorder}}</view>
+ </view>

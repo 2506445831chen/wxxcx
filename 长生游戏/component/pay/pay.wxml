@@ -1,0 +1,35 @@
+<view class='payshow'>
+    <view class='icon'>
+      <icon class='iconfont icon-right-1'></icon>支付成功
+    </view>
+    <view class='word'>商家可在畅支付App中查看此订单</view>
+</view>
+ <view class='boxorder'>
+ <view class='choosebox'>
+ <view class='timebox'>
+ <view class='time'>13:34</view>
+ </view>
+ <view class='button'>
+ <view class='box'>取消订单</view>
+ <view class='box active'>立即支付</view>
+ </view>
+</view>
+    <view class='shopname'>面馆（万国城店）</view>
+    <view class='orderinformation'>
+      加州牛肉面
+      <view class='share'>X 1</view>
+      <view class='price'>￥ 24</view>
+    </view>
+    <view class='orderinformation'>
+      加州牛肉面
+      <view class='share'>X 1</view>
+      <view class='price'>￥ 24</view>
+    </view>
+    <view class='count'>总金额
+      <view class='num'>￥48</view>
+    </view>
+    <view class='paycount'>实付额
+      <view class='num'>￥48</view>
+    </view>
+  </view>
+

@@ -1,0 +1,23 @@
+<view class="top" wx:for='{{produce}}' wx:key="index">
+  <view class='title'>
+    <icon class="iconfont icon-jiantou" bindtap='back'></icon>{{item.productName}}</view>
+</view>
+<view class='content' wx:for='{{produce}}' wx:key="index">
+  <view class='image'><image src='http://4j1ade7.hn3.mofasuidao.cn/image/{{item.productIcon}}'></image></view>
+  <view class='information'>
+    <view class='h1'>{{item.productName}}</view>
+    <view class='p'>{{item.productDescription}}</view>
+    <view class='p2'>{{language.stock}}{{item.productStock}}</view>
+  </view>
+  <view class='count-box'>
+   <view class='price'>{{language.company}}
+      <view class='span'>{{item.productPrice}}</view>
+    </view>
+    <view class='box-icon'>
+   <icon class='iconfont icon-jianhao' bindtap='reduce' data-goods1='{{goods1}}' data-id="{{item.productId}}"></icon>
+    <view class='num'>{{count}}</view>
+    <icon class='iconfont icon-jiahao'  bindtap='addCar' data-id="{{item.productId}}"></icon>
+    </view>
+  </view>
+</view>
+<car num="{{num}}" pricetotal="{{pricetotal}}" language="{{language}}" goods1="{{goods1}}" bindmyevent='changeCar'/>

@@ -1,0 +1,202 @@
+@import'/utils/iconfont.wxss';
+.screen{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 1334rpx;
+  background:rgba(0,0,0,0.4);
+}
+.car-bottom{
+  background: #ffffff;
+  box-sizing: border-box;
+  padding-left:32rpx; 
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow:0 0 1rpx 0 rgba(195,195,195,1);
+}
+.car-delet{
+  position: fixed;
+  bottom:100rpx;
+   left: 0;
+ width: 100%;
+ min-height: 65rpx;
+ /* background: red; */
+background:rgba(247,247,247,1);
+box-shadow:0 0 20rpx 0 rgba(0, 0, 0, 0.1);
+}
+ .car-delet .li{
+  width: 100%;
+ height: 65rpx;
+ display: flex;
+ align-items: center;
+ }
+ .listBox{
+   width: 100%;
+   max-height: 279rpx;
+   overflow-y:scroll;
+   overflow: hidden; 
+ }
+ .list{
+   width: 100%;
+   height: 90rpx;
+   padding: 0 32rpx;
+   background: #ffffff;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+ }
+ .line{
+   width:686rpx;
+ height:2prx;
+background:rgba(247,247,247,1);
+ }
+ .span_center{
+   font-size:22rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(255,62,77,1);
+ }
+ .span{
+   width: 218rpx;
+   font-size:30rpx;
+   font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(141,141,141,1);
+ }
+ .icon-jianhao{
+   font-size: 42rpx;
+  color: #EFD47C;
+ }
+ .icon-jiahao{
+   font-size: 42rpx;
+  color: #EFD47C;
+ }
+ .box{
+   width: 134rpx;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .padding{
+   width: 562rpx;
+ height: 65rpx;
+ }
+ .image{
+   width: 35rpx;
+   height: 25rpx;
+   display: flex;
+ }
+ .image image{
+   width: 25rpx;
+   height: 25rpx;
+ }
+.car-delet .li .carClear{
+ font-size:24rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(141,141,141,1);
+}
+
+.iconfont{
+  position: relative;
+  font-size: 50rpx;
+}
+.count{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  left: 26rpx;
+  top:-6rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 22rpx;
+  background:#FF273B;
+  color: #FFFFFF;
+}
+.price{
+  width: 468rpx;
+  font-size: 36rpx;
+  color: #FF3E4D;
+  display: flex;
+  padding-left:36rpx; 
+}
+price-number{
+  font-family: PingFang-SC-Bold;
+  font-weight: Bold;
+}
+.payment{
+  width: 202rpx;
+  height: 100%;
+  background: #EDC954;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+/*删除弹框*/
+.deleteScreen{
+    width: 100%rpx;
+    height:1334rpx;
+    background:rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.deleteScreen .box{
+    position: absolute;
+    top: 470rpx;
+    left: 57rpx;
+    width:636rpx;
+    height:395rpx;
+    background:rgba(255,255,255,1);
+    border-radius:5rpx;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.deleteScreen .title{
+    width: 100%;
+    height: 100rpx;
+    font-size:40rpx;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color:rgba(141,141,141,1);
+    padding: 51.7rpx 50rpx 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.buttonBox{
+    padding-bottom: 117rpx;
+    width: 100%;
+    height: 75rpx;
+    font-size:36rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color:rgba(184,184,184,1);
+}
+.submit{
+    padding:0 75rpx;
+}
+.submit1{
+    font-size:36rpx;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color:rgba(239,212,124,1);
+    border-left:0.02rpx solid rgba(202,202,202,1) ;
+}

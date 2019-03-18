@@ -1,0 +1,46 @@
+<view class='screen'style='{{style}}' bindtap='normal'></view>
+<view class='car-delet' style='{{style}}'>
+  <view class='li' bindtap='deleteAlert'>
+    <view class='padding'></view>
+    <view class='image'>
+      <image src='{{image}}'></image>
+    </view>
+    <view class="carClear">{{language.emptycart}}</view>
+  </view>
+  <view class='listBox'>
+    <view class='list' wx:for="{{order}}" wx:key="index">
+      <view class='span'>{{order[index].productName}}</view>
+      <view class='span_center'>{{language.company}}{{order[index].productPrice}}</view>
+      <view class='box'>
+        <icon class='iconfont icon-jianhao' bindtap='reduce' data-goods1='{{goods1}}' data-id="{{order[index].productId}}"></icon>
+          {{order[index].count}}
+        <icon class="iconfont icon-jiahao" bindtap='addCar' data-id="{{order[index].productId}}"></icon>
+      </view>
+    </view>
+  </view>
+  <view class='line'></view>
+</view>
+
+<!-- 点击清空后的弹出框 -->
+<view class="deleteScreen" style="{{style1}}">
+    <view class="box">
+       <view class="title i18n" name="Are you sure you want to empty the shopping cart">{{language.deletionProblem}}</view>
+        <view class="buttonBox">
+            <view class="submit i18n" name="cancel" bindtap="cancel">{{language.cancel}}</view>
+            <view class="submit submit1 i18n" name="empty" bindtap="deleteOrder">{{language.empty}}</view>
+        </view>
+    </view>
+</view>
+
+<!-- 底部购物车总数 -->
+<view class="car-bottom">
+  <view class='iconfont icon-gouwuche' bindtap='showDelete'  wx:if="{{num>0}}">
+    <view class='count'>{{num}}</view>
+  </view>
+   <view class='iconfont icon-gouwuche' wx:else>
+  </view>
+  <view class='price'>{{language.company}}
+    <view class='price-number'>{{pricetotal}}</view>
+  </view>
+  <view class='payment' bindtap='order'>{{language.tocar}}</view>
+</view>

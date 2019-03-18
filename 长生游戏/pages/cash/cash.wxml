@@ -1,0 +1,4 @@
+<!--pages/cash/cash.wxml-->
+<view bindtap='back'>你哦是</view>
+
+<view> {{language.orderNumber}}{{orderid}}</view>

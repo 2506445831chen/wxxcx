@@ -1,0 +1,26 @@
+.top{
+ width: 750rpx;
+ height: 132rpx;
+ background:#FFFFFF;
+  font-size: 36rpx;
+  font-weight: Bold;
+  color: #585858;
+}
+.title {
+  font-family: PingFang-SC-Bold;
+  margin-right: 32rpx;
+  padding-top: 70rpx;
+  font-size: 36rpx;
+  font-weight: Bold;
+  color: #585858;
+}
+.icon-jiantou{
+  color: #585858;
+  font-size: 38rpx;
+  margin-left:32rpx; 
+}
+
+/* 行内块元素 */
+.line-block{
+  display: inline-block;
+}

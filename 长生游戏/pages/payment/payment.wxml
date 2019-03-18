@@ -1,0 +1,28 @@
+<view class="top">
+  <view class='title'>
+   {{language.paymentmethod}}
+  </view>
+</view>
+<view class='body'>
+  <view class='paymentnumber'>
+    <view class='box'>{{language.amountpayable}}</view>
+    <view class='box'>{{language.company}}
+      <view class='num'>{{pricetotal}}</view>
+    </view>
+  </view>
+  <view class='paytitle'>{{language.paymentoptions}}</view>
+  <view class="paycategory">
+    <view class="payleft {{pay==1?'active':''}}" bindtap='active'>
+       <view class='image'><icon class='iconfont icon-weixin'></icon></view>
+      <icon class='iconfont icon-duigou'  style="{{pay!==1?'display:none':''}}"></icon>
+     <view class='payname'>{{language.weChat}}</view>
+    </view>
+    <view class="payright {{pay==2?'active':''}}"bindtap='active1'>
+      <view class='image'> <view class="iconfont icon-wallet"></view></view>
+      <icon class='iconfont icon-duigou' style="{{pay!==2?'display:none':''}}"></icon>
+      <view class='payname'>{{language.cash}}</view>
+    </view>
+  </view>
+  
+    <view class="button" bindtap='payorder'>{{language.submissionofpayment}}</view>
+</view>

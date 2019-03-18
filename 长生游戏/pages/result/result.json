@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "box":"/component/pay/pay",
+    "order":"/component/shop/shop"
+  }
+}

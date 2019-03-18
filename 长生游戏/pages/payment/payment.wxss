@@ -1,0 +1,147 @@
+@import '/utils/style.wxss';
+
+.body {
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+.paymentnumber {
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  display: flex;
+  width: 100%;
+  height: 96rpx;
+  align-items: center;
+  background: #ffffff;
+  border-top:2rpx solid#E5E5E5; 
+  justify-content: space-between;
+  box-shadow: 0 10rpx 20rpx 5rpx rgba(0, 0, 0, 0.05);
+}
+
+.box {
+  font-size: 32rpx;
+  color: #8d8d8d;
+  display: flex;
+}
+
+.paytitle {
+  box-sizing: border-box;
+  width: 100%;
+  height: 108rpx;
+  font-size: 30rpx;
+  color: #b4b4b4;
+  line-height: 108rpx;
+  padding-left: 32rpx;
+}
+
+.paycategory {
+  width: 100%;
+  height: 190rpx;
+  background: #ffffff;
+  display: flex;
+  box-shadow: 0 0 20rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.payleft {
+  position: relative;
+  width: 374rpx;
+  height: 100%;
+  display: flex;
+  border-right: 2rpx solid #E5E5E5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.payleft.active {
+  position: relative;
+  width: 374rpx;
+  height: 100%;
+  display: flex;
+  border: 2rpx solid#019fe8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.payright {
+  position: relative;
+  width: 374rpx;
+  height: 100%;
+  display: flex;
+   color:#01e827;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 2rpx solid #E5E5E5;
+}
+.payright.active{
+  position: relative;
+  width: 374rpx;
+  height: 100%;
+  display: flex;
+   color:#01e827;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2rpx solid#019fe8;
+}
+
+.image {
+  width: 68rpx;
+  height: 68rpx;
+}
+.iconfont.icon-weixin{
+  font-size: 68rpx;
+    color:#01e827;
+}
+.iconfont.icon-alipay{
+    font-size: 68rpx;
+    color:#019fe8;
+}
+.iconfont.icon-duigou{
+   font-size: 78rpx;
+   color: #019fe8;
+   position: absolute;
+   top: -4rpx;
+   right: 0;
+}
+.payleft .payname {
+  font-size: 32rpx;
+  color:#01e827;
+}
+.payright .payname {
+  font-size: 32rpx;
+ color: #019fe8;
+}
+.last{
+ width: 100%;
+ height: 96rpx;
+ background: #ffffff;
+ padding-left:32rpx; 
+ display: flex;
+  box-shadow: 0 0 20rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.lastleft{
+ padding-left:32rpx; 
+  height: 100%;
+  line-height: 96rpx;
+ font-size: 34rpx;
+ color: #8D8D8D;
+}
+.iconfont.icon-wallet{
+  width: 42rpx;
+  height: 100%;
+  font-size: 68rpx;
+  color: #019fe8;
+}
+.button {
+  margin-top: 52rpx;
+  margin-left:32rpx; 
+  width: 686rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background: #edc954;
+  font-size: 36rpx;
+  color: #fff;
+}

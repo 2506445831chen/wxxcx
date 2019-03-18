@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "car": "/component/car/car",
+    "noshop":"/component/picture/picture"
+  }
+}

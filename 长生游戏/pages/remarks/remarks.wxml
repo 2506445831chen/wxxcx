@@ -1,0 +1,13 @@
+<view class="top">
+  <view class='title'>
+    <icon class="iconfont icon-jiantou" bindtap='back'></icon>{{language.remarks}}
+  </view>
+</view>
+<view class='body'>
+  <view class='content'>
+    <textarea class="box" placeholder='输入你的其它要求' bindinput="bindinput"  maxlength='50'>
+      <view class='count'>{{num}}/50</view>
+    </textarea>
+  </view>
+  <view class='button' bindtap='information'>{{language.sure}}</view>
+</view>

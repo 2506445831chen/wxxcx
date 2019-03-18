@@ -1,0 +1,30 @@
+<view class="curtain">
+  <view class='box'>
+    <view class='box-top'>
+    <view class='title'>宫保鸡丁盖饭</view>
+    <view class='close'><icon class='iconfont icon-guanbi1'></icon></view>
+    </view>
+    <view class='center'>
+      <view class='flavor'> 口味</view>
+      <view class="taste">
+        <view class='taste-box active'>微辣</view>
+        <view class='taste-box'>中辣</view>
+        <view class='taste-box'>特辣</view>
+        <view class='taste-box'>超级辣</view>
+      </view>
+
+      <view class='statistics'>
+        <view class='price'>￥
+          <view class="number">45</view>
+          <view class='span'>微辣</view>
+        </view>
+        <view class='count'>
+          <view class="reduce"><icon class='iconfont icon-jianhao'></icon></view>
+          <input>1</input>
+          <view class="add"><icon class='iconfont icon-jiahao'></icon></view>
+        </view>
+      </view>
+    </view>
+    <view class='button'>确定</view>
+  </view>
+</view>

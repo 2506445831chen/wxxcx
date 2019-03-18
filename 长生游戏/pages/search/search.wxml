@@ -1,0 +1,35 @@
+<view class="top">
+  <view class='title'>
+    <icon class="iconfont icon-jiantou" bindtap='navergator'></icon> {{language.searchDishes}}
+  </view>
+</view>
+<view class="body">
+<view class='search'>
+        <view class='box'>
+            <view class='iconfont icon-sousuo'></view>
+            <input  type="text" class='input' bindinput='bindinput' value='{{input}}'></input>
+            <view class='iconfont icon-guanbi' style='{{close}}' bindtap='clearWord'></view>
+        </view>
+        <view class="button i18n" name="search" bindtap='searchAll'>搜索</view>
+    </view>
+  <block wx:if="{{goods2}}">
+    <view class='list'>
+      <view class='li' wx:for="{{goods2}}" wx:key="index" bindtap='clickcategory' data-index='{{item}}'>
+       <navigator url='/pages/details/details?id={{item.productId}}'>
+        {{item.productName}}
+        </navigator>
+      </view>
+      </view>
+  </block>
+  <block wx:else>
+    <view class='heat'>{{language.hotsearchdishes}}
+    </view>
+    <view class='list'>
+    </view>
+  </block>
+  <block></block>
+  </view>
+  <!-- <block wx:if='{{show}}'>
+    <noshop show='{{show}}' language='{{language}}'/>
+  </block> -->
+ <car num="{{num}}" pricetotal="{{pricetotal}}" language="{{language}}" goods1="{{goods1}}" bindmyevent='changeCar'/>

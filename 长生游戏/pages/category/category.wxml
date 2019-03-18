@@ -1,0 +1,64 @@
+<view class="top">
+  <view class='title'>{{language.shop}}</view>
+</view>
+<!-- <block wx:if='{{success}}'> -->
+<view class='tipsBox' style='display:none'>
+<view class='span'>你已经点过单了</view>
+<view class='spanRight'>查看详情 》</view>
+<view class='close'>x</view>
+</view>
+<!-- </block>
+<block wx:else></block> -->
+<view class="outsource">
+  <view class='paddingtop'></view>
+  <view class="search" bindtap='search'>
+    <icon class='iconfont icon-sousuo'></icon>
+    <input class='input' placeholder='请输入你要找的菜品名'></input>
+  </view>
+  <view class='padding'></view>
+  <view class="Part">
+    <view class='left'>
+      <block wx:for="{{goods}}" wx:key="index" catchtap>
+        <view class="li {{goods[index].categoryId==sign?'active':''}}" bindtap="showShop" data-id="{{goods[index].categoryId}}" data-shop="{{goods[index].categoryType}}">
+          {{goods[index].categoryName}} 
+        </view>
+      </block>
+    </view>
+
+    <scroll-view class="right" scroll-y="true"  scroll-into-view="{{toView}}" >
+      <block wx:for="{{goods}}"  wx:key="index"> 
+     <text class="smalltitle" id="b{{item.categoryId}}" wx:if="{{goods[index]}}"> {{goods[index].categoryName}}</text>
+         <block wx:for="{{goods[index].productInfos}}" wx:key="index" wx:for-item="items">        
+            <view class="goods">
+          <navigator url='/pages/details/details?id={{items.productId}}'>
+            <view class='image'>
+              <image src='http://4j1ade7.hn3.mofasuidao.cn/image/{{items.productIcon}}'></image>
+            </view>
+            <view class="information">
+              <view class='h1'>{{items.productName}}</view>
+              <view class='p'>{{items.productDescription}}</view>
+              <view class='p2'>{{language.stock}} 22</view>
+              <view class='price'>{{language.company}}
+                <view class='span'>{{items.productPrice}}</view>
+              </view>
+            </view>
+          </navigator>
+          <view class='iconfontbox'>
+            <view class="reduceshow">
+            <block wx:for='{{goods1}}' wx:key='index'>
+              <block wx:if="{{goods1[index].productId==items.productId&&goods1[index].count}}">
+                <icon class='iconfont icon-jianhao' bindtap='reduce' data-goods1='{{goods1}}' data-id="{{items.productId}}"></icon>
+                <view class='word'>{{goods1[index].count}}</view>
+              </block>
+              </block>
+            </view>
+            <icon class="iconfont icon-jiahao" bindtap='addCar' data-id="{{items.productId}}"></icon>
+          </view>
+        </view>
+        </block>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<poout/>
+<car num="{{num}}" pricetotal="{{pricetotal}}" language="{{language}}" goods1="{{goods1}}"  bindmyevent='changeCar'/>

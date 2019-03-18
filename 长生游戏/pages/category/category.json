@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+   "poput":"/component/poput/poput",
+    "car": "/component/car/car"
+  }
+}

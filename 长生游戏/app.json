@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/category/category",
+      "pages/index/index",
+    "pages/result/result", 
+    "pages/order/order",
+    "pages/remarks/remarks",
+    "pages/details/details",
+    "pages/search/search",
+    "pages/payment/payment",
+    "pages/cash/cash",
+    "component/poput/poput",
+    "component/car/car",
+    "component/pay/pay",
+    "component/picture/picture"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  }
+}

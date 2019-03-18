@@ -1,0 +1,226 @@
+@import '/utils/style.wxss';
+.body{
+ width: 100%;
+ background: #fafafa; 
+}
+.top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+}
+.topBox{
+  width: 100%;
+   height:132rpx; 
+   background: #f8f8f8f8;
+}
+.payshow.show{
+  width: 100%;
+  height: 132rpx;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  box-shadow: 0  2px 10px #EAEAEA;
+}
+.icons{
+  font-family: PingFang-SC-Bold;
+  font-size: 36rpx;
+  color: #8A8A8A;
+  line-height: 50rpx;
+}
+.icon-guanbi{
+  font-size: 50rpx;
+  color:#FF3E4D;
+  margin-right:50rpx; 
+}
+.payshow{
+  width: 100%;
+  height: 176rpx;
+  background: #FFFFFF;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  box-shadow: 0  2px 10px #EAEAEA;
+}
+.payshow.fail{
+  width: 100%;
+  height: 132rpx;
+  background: #FFFFFF;
+  padding: 0 32rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0  2px 10px #EAEAEA;
+}
+.icon{
+  padding-top:40rpx; 
+  font-family: PingFang-SC-Bold;
+  font-size: 36rpx;
+  color: #8A8A8A;
+  line-height: 50rpx;
+}
+.icon-right-1{
+  font-size: 50rpx;
+  color:#6ad580;
+  margin-right:50rpx; 
+}
+.word{
+  width: 100%;
+  padding-left: 100rpx;
+  font-size: 28rpx;
+  color: #CACACA;
+}
+/* 取餐信息 */
+.orderId{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  padding-top: 58rpx;
+  justify-content: center;
+  box-sizing:border-box;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  height: 82rpx;
+}
+.image{
+width: 113rpx;
+height: 82rpx;
+ padding-right:28rpx; 
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.orderId .orderNumber{
+  display: flex;
+  font-size:32rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(239,212,124,1);
+}
+.orderId .span{
+  padding-left:15rpx;
+}
+.orderId .p{ 
+  font-size:28rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(184,184,184,1);
+}
+/* 支付信息 */
+.boxorder{
+  margin-top: 50rpx;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0  2px 10px #EAEAEA;
+  padding:0 32rpx;
+  box-sizing: border-box; 
+}
+.shopname{
+  width: 100%;
+  height: 94rpx;
+ font-size: 32rpx;
+ line-height: 94rpx;
+ color:#585858;
+ border-bottom:2rpx solid #F7F7F7;
+}
+.orderinformation{
+ width: 100%;
+ height: 72rpx;
+ font-size: 30rpx;
+ color: #585858;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.orderinformation .span{
+  width: 200rpx;
+}
+.share{
+ font-size: 30rpx;
+ color: #CACACA;
+}
+.price{
+  min-width: 80rpx;
+  font-size: 26rpx;
+  color: #CACACA;
+  text-align: right;
+}
+.count{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:2rpx solid #F7F7F7;
+  border-top: 2rpx solid #F7F7F7;
+}
+.num{
+  font-size: 26rpx;
+  color: #CACACA;
+}
+.paycount{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 支付号码信息 */
+.consumption{
+  margin-top: 50rpx;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0  2px 10px #EAEAEA;
+  padding:0 32rpx;
+  box-sizing: border-box; 
+  
+}
+.table{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:2rpx solid #F7F7F7;
+}
+.payway{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:2rpx solid #F7F7F7;
+}
+.time{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:2rpx solid #F7F7F7;
+}
+.ordernumber{
+  width: 100%;
+  height: 94rpx;
+  font-size: 30rpx;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

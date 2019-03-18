@@ -1,0 +1,177 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wxb2212a5772ca5f38",
+	"projectname": "%E6%9C%80%E5%88%9D%E5%BD%A2%E6%80%81",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "remark",
+					"pathName": "pages/remarks/remarks",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "payment",
+					"pathName": "pages/payment/payment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "payment",
+					"pathName": "component/shop/shop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "payments",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "car",
+					"pathName": "component/car/car",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/result/result",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "component/pay/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/payment/payment",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "pay",
+					"pathName": "pages/result/result",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "no",
+					"pathName": "component/picture/picture",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "poput",
+					"pathName": "component/poput/poput",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "picture",
+					"pathName": "component/picture/picture",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "scene",
+					"pathName": "pages/category/category",
+					"query": "scene=1003",
+					"scene": 1047
+				},
+				{
+					"id": -1,
+					"name": "scene",
+					"pathName": "pages/category/category",
+					"query": "scene='121331441332'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "scene",
+					"pathName": "pages/category/category",
+					"query": "scence='121331441332'",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "scene",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "payment",
+					"pathName": "pages/payment/payment",
+					"scene": null
+				}
+			]
+		}
+	}
+}

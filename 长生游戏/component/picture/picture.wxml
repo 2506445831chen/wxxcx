@@ -1,0 +1,22 @@
+<view class="noresult" wx:if="{{show==1}}">
+<view class='noresult-image'></view>
+<view class='inforam'>{{language.noFound}}</view>
+</view>
+<scroll-view class='content' wx:else scroll-y="true" >
+   <view class="goods">
+        <navigator url='/pages/details/details?id={{show.productId}}'>
+          <view class='image'>
+            <image src='http://4j1ade7.hn3.mofasuidao.cn/image/{{show.productIcon}}'></image>
+          </view>
+        </navigator>
+        <view class="information">
+          <view class='h1'>{{show.productName}}</view>
+          <view class='p'>{{show.productDescription}}</view>
+          <view class='p2'>销量 22</view>
+          <view class='price'>￥
+            <view class='span'>{{show.productPrice}}</view>
+          </view>
+        </view>
+      </view>
+     </scroll-view>
+
